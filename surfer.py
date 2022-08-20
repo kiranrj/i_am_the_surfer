@@ -55,7 +55,7 @@ def getTracker() :
         if tracker_type == 'MOSSE':
             tracker = cv2.TrackerMOSSE_create()
         if tracker_type == "CSRT":
-            tracker = cv2.TrackerCSRT_create()
+            tracker = cv2.legacy.TrackerCSRT_create()
     return tracker
 
 def sendKeyStroke(direction, track):
